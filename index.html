@@ -1,38 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Juan Caps Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JuanCaps Gorras</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+  <!-- Encabezado con barra de navegación -->
   <header>
-    JuanCaps Feed 🧢🔥
+    <nav class="navbar">
+      <div class="logo">JuanCaps 🧢</div>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#info">Gorras</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="container" style="align-items: center;">
-    <div class="post">
-      <img src="img/neg.jpg" alt="Gorra 1">
-      <div class="caption">La mejor gorra negra 🔥</div>
+  <!-- Sección principal con imagen y texto -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>La mejor selección de gorras urbanas</h1>
+      <p>Explora nuestra colección de gorras con diseños exclusivos y calidad premium. ¡Haz que tu estilo hable por ti!</p>
     </div>
+    <div class="hero-img">
+      <img src="img/exc.jpg" alt="Gorra destacada">
+    </div>
+  </section>
 
-    <div class="post">
-      <img src="img/exc.jpg" alt="Gorra 2">
-      <div class="caption">Edición limitada 2024 🧢</div>
+  <!-- Tres tarjetas con información -->
+  <section class="cards" id="info">
+    <div class="card">
+      <img src="img/colores.jpg" alt="Diseños únicos">
+      <h3>Diseños únicos</h3>
+      <p>Cada gorra está diseñada para destacar. Estilo urbano, elegante o casual, tú eliges.</p>
     </div>
+    <div class="card">
+      <img src="img/neg.jpg" alt="Calidad garantizada">
+      <h3>Calidad garantizada</h3>
+      <p>Materiales resistentes, cómodos y duraderos. Hechas para el uso diario.</p>
+    </div>
+    <div class="card">
+      <img src="img/redes.jpg" alt="Envió a todo el país">
+      <h3>Envíos nacionales</h3>
+      <p>Recibe tu gorra en la puerta de tu casa. Hacemos envíos a toda Colombia.</p>
+    </div>
+  </section>
 
-    <div class="post">
-      <img src="img/colores.jpg" alt="Gorra 3">
-      <div class="caption">Disponible en todos los colores</div>
-    </div>
-      <div class="post">
-      <img src="img/redes2.jpg" alt="Redes">
-      <div class="caption">La mejor calidad al mejor precio!</div>
-    </div>
-  </div>
+  <!-- Formulario de contacto -->
+  <section class="contact" id="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea placeholder="Escribe tu mensaje" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- Footer simple -->
+  <footer>
+    <p>&copy; 2025 JuanCaps. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
